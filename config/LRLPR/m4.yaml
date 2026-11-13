@@ -1,0 +1,13 @@
+# Vòng 1, nhánh M4: như M3 nhưng có tăng cường dữ liệu (xoay nhẹ, đổi sáng/gamma, làm nét nhẹ, sương mù trên ảnh LR).
+branch: M4
+init_from: pretrained
+aug: 1
+fog_p: 0.3
+epochs: 12
+batch: 32
+lr: 5.0e-5
+lr_min_ratio: 0.1
+val_tracks: 500
+ocr_weight: 0.0
+mf: 0
+resume: 1

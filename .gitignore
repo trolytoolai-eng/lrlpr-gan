@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+*.pth
+*.npz
+*.zip
+.ipynb_checkpoints/
+# kết quả lớn nằm trên Drive, không đưa lên GitHub
+results/
+ckpt/

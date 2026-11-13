@@ -1,0 +1,8 @@
+# Vòng 2: dạy lại OCR trên ảnh đầu ra của các mạng làm nét (train_ocr_sr.py), tạo nhánh có dấu +.
+adapt_from: [M2, M4, M5a, M5b, M5c]   # mạng nào chưa có checkpoint sẽ bị bỏ qua (dùng bởi run_all.py)
+epochs: 10
+batch: 128
+lr: 1.0e-4
+freeze_encoder: 0
+sr_frames_per_track: 2
+hr_frames_per_track: 1

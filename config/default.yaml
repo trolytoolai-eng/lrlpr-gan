@@ -1,0 +1,15 @@
+# Cấu hình chung cho run_all.py. Cấu hình từng nhánh nằm trong config/LRLPR/*.yaml.
+# Đường dẫn ở đây là của Google Colab; chạy máy khác thì sửa drive_dir và local_dir.
+
+drive_dir: /content/drive/MyDrive/IT4343E   # thư mục dự án trên Drive của tôi (My Drive), chứa zip dữ liệu và nhận kết quả
+zip_name: LRLPR-26.zip                      # tên file dữ liệu nằm trong drive_dir
+local_dir: /content                         # đĩa cục bộ (đọc ghi nhanh hơn Drive): dữ liệu giải nén, repo LPSRGAN
+rodosol: models/Rodosol.pth                 # trọng số GP-LPR ban đầu, tính từ drive_dir
+
+seed: 42                  # hạt giống cố định để lặp lại được kết quả
+workers: 2                # số tiến trình nạp dữ liệu (Colab thường có 2 CPU)
+vgg_pretrained: 1         # 1 = dùng VGG19 đã học sẵn cho perceptual loss
+max_train_tracks: 0       # 0 = dùng hết; chỉ đặt > 0 khi chạy thử nhanh
+allow_low_ocr: false      # true = vẫn chạy tiếp dù OCR sau fine-tune đọc ảnh HR dưới 70% (không khuyến nghị)
+pretrained_path: null     # null = tự tải trọng số LPSRGAN công bố; hoặc đường dẫn file có sẵn
+start_fresh: true         # true: chạy trọn vòng 1 thì cất bảng thời gian cũ đi, đo lại từ đầu

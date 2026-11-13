@@ -1,0 +1,13 @@
+# Vòng 3, nhánh M6a: mạng nhiều frame. Chồng 5 frame LR thành 15 kênh, khởi tạo từ M5c (mở rộng lớp đầu).
+branch: M6a
+init_from: M5c
+mf: 1
+mf_center_weight: 0.6     # trọng số khởi tạo của frame giữa; bốn frame còn lại chia phần còn lại
+aug: 0
+epochs: 15
+batch: 32
+lr: 1.0e-4
+lr_min_ratio: 0.1
+val_tracks: 800
+ocr_weight: 3.0
+resume: 1

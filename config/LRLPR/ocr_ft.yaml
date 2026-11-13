@@ -1,0 +1,6 @@
+# Vòng 1: fine-tune OCR GP-LPR trên ảnh HR (train_ocr.py). Bắt đầu từ Rodosol.pth, đóng băng phần trích đặc trưng.
+epochs: 8
+batch: 64
+lr: 1.0e-4
+freeze_encoder: 1
+frames_per_track: 2

@@ -1,0 +1,12 @@
+# Vòng 2, nhánh M5b: fine-tune LPSRGAN với loss OCR có gradient thật (cross-entropy của OCR đóng băng), trọng số 1.0.
+branch: M5b
+init_from: pretrained
+aug: 0
+epochs: 15
+batch: 32
+lr: 1.0e-4
+lr_min_ratio: 0.1
+val_tracks: 800
+ocr_weight: 1.0
+mf: 0
+resume: 1

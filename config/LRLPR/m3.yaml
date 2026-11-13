@@ -1,0 +1,12 @@
+# Vòng 1, nhánh M3: fine-tune LPSRGAN từ trọng số công bố, dữ liệu nguyên bản (loss = L1 + VGG19).
+branch: M3
+init_from: pretrained     # pretrained = trọng số LPSRGAN công bố; hoặc tên nhánh đã huấn luyện (ví dụ M5c)
+aug: 0                    # 1 = bật tăng cường dữ liệu
+epochs: 12
+batch: 32
+lr: 5.0e-5
+lr_min_ratio: 0.1
+val_tracks: 500
+ocr_weight: 0.0           # > 0 = thêm loss OCR có gradient
+mf: 0                     # 1 = mạng nhiều frame
+resume: 1

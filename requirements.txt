@@ -1,0 +1,12 @@
+# Môi trường đã dùng cho kết quả trong báo cáo (Google Colab, GPU Tesla T4):
+#   Python 3.13, torch 2.14 (CUDA 13.0), kornia 0.9, OpenCV 5.0
+# Cài PyTorch bản hợp với CUDA của máy trước, rồi cài phần còn lại:  pip install -r requirements.txt
+numpy
+pandas
+matplotlib
+opencv-python-headless
+Pillow
+PyYAML
+kornia        # CLAHE cho ảnh HR
+torchvision   # VGG19 cho perceptual loss
+# torch       # Colab đã có sẵn; máy khác cài theo hướng dẫn của PyTorch
