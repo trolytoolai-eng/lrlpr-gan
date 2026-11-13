@@ -7,3 +7,8 @@ __pycache__/
 # kết quả lớn nằm trên Drive, không đưa lên GitHub
 results/
 ckpt/
+
+# dataset and anything derived from it must never be committed (license)
+LRLPR-26*
+evidence/
+*.csv
